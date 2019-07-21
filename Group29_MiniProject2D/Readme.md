@@ -1,6 +1,6 @@
 # Mini Project 1: 2D Games 
 
-Group 29 - 1651003 - Nguyen Thi Minh Anh
+1651003 - Nguyen Thi Minh Anh
 
 
 Game title: The Penguin World
