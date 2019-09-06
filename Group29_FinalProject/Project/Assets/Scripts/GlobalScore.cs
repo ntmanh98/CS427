@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GlobalScore : MonoBehaviour
 {
     public GameObject scoreBox;
+    public static int globalBestScore = PlayerPrefs.GetInt("LevelScore");
     public static int currentScore;
     public int internalScore;
 

@@ -28,7 +28,18 @@ public class FinishLevel : MonoBehaviour
         theScore.GetComponent<Text>().text = "Score: " + GlobalScore.currentScore;
         totalScored = GlobalScore.currentScore + timeCalc;
         totalScore.GetComponent<Text>().text = "Total score: " + totalScored;
-        PlayerPrefs.SetInt("LevelScore", totalScored);
+
+        if(totalScored > GlobalScore.globalBestScore)
+        {
+            GlobalScore.globalBestScore = totalScored;
+            PlayerPrefs.SetInt("LevelScore", totalScored);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("LevelScore", GlobalScore.globalBestScore);
+        }
+
+        //PlayerPrefs.SetInt("LevelScore", totalScored);
         levelMusic.SetActive(false);
         levelTimer.SetActive(false);
         levelComplete.Play();

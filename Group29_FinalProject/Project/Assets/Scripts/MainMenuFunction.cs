@@ -8,6 +8,7 @@ public class MainMenuFunction : MonoBehaviour
     public AudioSource buttonPress;
     public int bestScore;
     public GameObject bestScoreDisplay;
+
     void Start()
     {
         bestScore = PlayerPrefs.GetInt("LevelScore");
@@ -19,6 +20,7 @@ public class MainMenuFunction : MonoBehaviour
         buttonPress.Play();
         RedirectToLevel.redirectToLevel = 3;
         SceneManager.LoadScene(2);
+        GlobalScore.currentScore = 0;
 
     }
 
@@ -36,5 +38,6 @@ public class MainMenuFunction : MonoBehaviour
     public void ResetBest()
     {
         PlayerPrefs.SetInt("LevelScore", 0);
+        SceneManager.LoadScene(1);
     }
 }

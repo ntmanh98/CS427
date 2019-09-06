@@ -50,6 +50,7 @@ public class PauseGame : MonoBehaviour
         gamePause = false;
         Time.timeScale = 1;
         SceneManager.LoadScene(2);
+        GlobalScore.currentScore = 0;
     }
 
     public void QuitToMenu()
@@ -60,5 +61,6 @@ public class PauseGame : MonoBehaviour
         gamePause = false;
         Time.timeScale = 1;
         SceneManager.LoadScene(1);
+        GlobalScore.currentScore = 0;
     }
 }
