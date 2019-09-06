@@ -15,7 +15,7 @@ Unity 2019.1.3f1 Personal (64-bit)
 
 ## Build folder
 
-[https://drive.google.com/drive/folders/1a4tIae6u7qtxwcQA1WGALYXpuf0rhbJY](https://drive.google.com/open?id=1a4tIae6u7qtxwcQA1WGALYXpuf0rhbJY)
+[https://drive.google.com/open?id=1qNnOGZbqrDYTpMCzYHP4hrH9brlEgujp](https://drive.google.com/open?id=1qNnOGZbqrDYTpMCzYHP4hrH9brlEgujp)
 
 ## Reference
 
